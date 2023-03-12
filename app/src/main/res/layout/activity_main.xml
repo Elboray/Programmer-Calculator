@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon"
+        app:layout_constraintBottom_toTopOf="@+id/Programmer_Calculator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/Programmer_Calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="center"
+        android:text="@string/programmer_calculator"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.735"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/Binary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/binary"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="71dp"
+            tools:layout_editor_absoluteY="479dp" />
+
+        <EditText
+            android:id="@+id/editTextBinary"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:digits="01"
+            android:background="@drawable/shape_edit"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="125dp"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/Octal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="16dp"
+            android:text="@string/octal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="31dp" />
+
+        <EditText
+            android:id="@+id/editTextOctal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:digits="01234567"
+            android:background="@drawable/shape_edit"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="249dp"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/Decimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="16dp"
+            android:text="@string/decimal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="192dp" />
+
+        <EditText
+            android:id="@+id/editTextDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/shape_edit"
+            android:inputType="textPersonName"
+            android:digits="012345678910"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="366dp"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/Hexadecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="16dp"
+            android:text="@string/hexadecimal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="300dp" />
+
+        <EditText
+            android:id="@+id/editTextHexadecimal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/shape_edit"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="74dp"
+            android:digits="0123456789ABCDFabcdf"
+            tools:layout_editor_absoluteY="551dp"
+            tools:ignore="Autofill,LabelFor" />
+
+        <Button
+            android:id="@+id/Clear"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape_edit"
+            android:text="@string/clear"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

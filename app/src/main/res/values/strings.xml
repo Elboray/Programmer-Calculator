@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Programmer Calculator</string>
+    <string name="programmer_calculator">Programmer Calculator</string>
+    <string name="binary">Binary</string>
+    <string name="octal">Octal</string>
+    <string name="decimal">Decimal</string>
+    <string name="hexadecimal">Hexadecimal</string>
+    <string name="clear">Clear</string>
+</resources>
